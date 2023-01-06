@@ -16,8 +16,12 @@ Modular Things uses JavaScript so when adding OpenCV we followed this <a href = 
 
 ### Coding 
 
-Each of the different devices, had their own learning curve. In Modular Things, once you plug the device in, you are able to see each of the function associated with the device object and name it. In the JavaScript I set an action listener that was listening for the different outputs, potentiometer values and button presses. There outputs were used in the logic of the code. 
+Each of the different devices, had their own learning curve. In Modular Things, once you plug the device in, you are able to see each of the function associated with the device object and name it. In the JavaScript I set an async loop that was listening for the different outputs, potentiometer values and button presses. There outputs were used in the logic of the code. 
 
 We set it so that when the first potentiometer value was 0-.5 the servo motor was being manually controlled by the second potentiometer (below .5 is left, above .5 is right). If the first potentiometer value was .5-1 the servo motor was being controlled by the face tracking software. If the first potentiometer was set to 0 and the second potentiometer was set to 1, another servo motor turns to allow a door to open, dispensing marbles.
 
 The face tracking software was using a camera connected to the dispensor platform. The HTML script is taking video and seeing if the face was on the left or right of the camera, then that changed the direction of the servo motor turning the platform. When the button was pressed, a faster motor was connected to a power source which started shooting the toilet paper. 
+
+#### Web App
+
+The web app had a few buttons, controlling the different devices. Each of the buttons was connected to an event listener which, once the buttons were pressed would perform different actions, such as choosing the direction of the sensor, starting the faster motor to dispence the toilet paper, release the marbles and toggle facial recognition mode.
