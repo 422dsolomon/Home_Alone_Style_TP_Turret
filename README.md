@@ -25,3 +25,7 @@ The face tracking software was using a camera connected to the dispensor platfor
 #### Web App
 
 The web app had a few buttons, controlling the different devices. Each of the buttons was connected to an event listener which, once the buttons were pressed would perform different actions, such as choosing the direction of the sensor, starting the faster motor to dispence the toilet paper, release the marbles and toggle facial recognition mode.
+
+---
+
+More documentation for the rest of the project can be found <a href = "https://fab.cba.mit.edu/classes/863.22/Harvard/week13.html">here</a>.
